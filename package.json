@@ -8,10 +8,6 @@
   "scripts": {
     "test": "index.html"
   },
-  "bugs": {
-    "url": "https://github.com/EvgenGal1/start-template-Gulp-JS/issues"
-  },
-  "homepage": "https://github.com/EvgenGal1/start-template-Gulp-JS#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
