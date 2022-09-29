@@ -1,17 +1,12 @@
 {
-  "name": "gulp_js",
-  "version": "1.0.1",
-  "description": "Шаблон запуска Gulp + JS",
-  "author": "EvGen Gal",
-  "private": true,
+  "name": "shiakidi",
+  "version": "",
+  "description": "",
+  "author": "",
   "license": "ISC",
-  "main": "Шаблон Gulp + JS",
+  "main": "",
   "scripts": {
     "test": "index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EvgenGal1/start-template-Gulp-JS.git"
   },
   "bugs": {
     "url": "https://github.com/EvgenGal1/start-template-Gulp-JS/issues"
