@@ -1,0 +1,380 @@
+//================================//
+//==LOYALTY HERO==//
+
+.loyalty-hero {
+    position: relative;
+
+    /* .loyalty-hero__bg */
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        @media (min-width: $md2) {
+            background-color: $lightGrey-color;
+        }
+
+        @media (max-width: $md2) {
+            width: auto;
+            left: -20px;
+            right: -20px;
+        }
+    }
+
+    /* .loyalty-hero__img */
+    &__img {
+        width: 54.8%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right center;
+
+        @media (max-width: 1000px) {
+            width: 59.2%;
+        }
+
+        @media (max-width: $md2) {
+            width: 100%;
+        }
+    }
+
+    /* .loyalty-hero__inner */
+    &__inner {
+        @media (min-width: $md2) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    /* .loyalty-hero__content */
+    &__content {
+        padding-right: 80px;
+
+        @media (max-width: $md2) {
+            padding: 82px 0;
+            position: relative;
+
+            .loyalty-hero__bg {
+                background: transparent;
+            }
+        }
+    }
+
+    /* .loyalty-hero__title */
+    &__title {
+        margin-bottom: 12px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    /* .loyalty-hero__text */
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 140%;
+        color: #242333;
+
+        max-width: 350px;
+
+        @media (max-width: $md2) {
+            max-width: 482px;
+        }
+
+        @media (max-width: 600px) {
+            max-width: 346px;
+            font-size: 18px;
+        }
+    }
+
+    /* .loyalty-hero__advantages */
+    &__advantages {
+        padding: 105px 12% 105px 0;
+
+        @media (max-width: 1000px) {
+            padding: 105px 0 105px;
+        }
+
+        @media (max-width: $md2) {
+            padding: 60px 0 60px 60px;
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &::after {
+                position: absolute;
+                left: -20px;
+                right: -20px;
+                top: 0;
+                height: 100%;
+                background-color: $lightGrey-color;
+            }
+        }
+
+        @media (max-width: 700px) {
+            padding-left: 0;
+        }
+
+        @media (max-width: 622px) {
+            flex-direction: column;
+            padding-left: 16%;
+        }
+
+        @media (max-width: 400px) {
+            padding-left: 0;
+        }
+    }
+
+    /* .loyalty-hero__item */
+    &__item {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 35px;
+
+        @media (max-width: $md2) and (min-width: 622px) {
+            width: 50%;
+        }
+
+        @media (max-width: 600px) {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.item-loyalty {
+
+    /* .item-loyalty__icon */
+    &__icon {
+        margin-right: 20px;
+    }
+
+    /* .item-loyalty__text */
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #242333;
+    }
+}
+
+//================================//
+//==DISCOUNTS==//
+
+.discounts {
+
+    /* .discounts__inner */
+    &__inner {}
+
+    /* .discounts__title */
+    &__title {}
+
+    /* .discounts__list */
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 -20px;
+
+        @media (max-width: 768px) {
+            margin: 0 -10px;
+        }
+
+        @media (max-width: 400px) {
+            margin: 0 -5px;
+        }
+
+        @media (max-width: 500px) {
+            flex-wrap: wrap;
+        }
+
+        // @media (max-width: $md2) {
+        //     justify-content: space-between;
+        // }
+    }
+
+    /* .discounts__item */
+    &__item {
+        padding: 50px 0 75px;
+        flex: 0 1 200px;
+        background: $orange-color;
+        border-radius: 0px 0px 100px 100px;
+        text-align: center;
+
+        margin: 0 20px;
+
+        @media (max-width: 768px) {
+            margin: 0 10px;
+            padding: 30px 0 46px;
+            flex: 0 1 133px;
+        }
+
+        @media (max-width: 500px) {
+            margin-bottom: 20px;
+            flex: 0 0 28%;
+        }
+
+        @media (max-width: 400px) {
+            margin: 0 5px 20px;
+            flex: 0 0 30%;
+        }
+    }
+
+    /* .discounts__price */
+    &__price {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        color: #FFFFFF;
+
+        margin-bottom: 20px;
+
+        @media (max-width: 680px) {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+    }
+
+    /* .discounts__equally */
+    &__equally {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        color: #FFFFFF;
+
+        margin-bottom: 20px;
+
+        @media (max-width: 680px) {
+            margin-bottom: 12px;
+        }
+    }
+
+    /* .discounts__procent */
+    &__procent {
+        font-family: 'Orchidea Pro';
+
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #FFFFFF;
+
+        @media (max-width: 680px) {
+            font-size: 40px;
+        }
+    }
+}
+
+//================================//
+//==DELIVERY OPTIONS==//
+
+.delivery-options {
+
+    /* .delivery-options__inner */
+    &__inner {
+
+        @media (min-width: 850px) {
+            display: flex;
+        }
+    }
+
+    /* .delivery-options__title */
+    &__title {
+
+        @media (min-width: 850px) {
+            text-align: left;
+        }
+    }
+
+    /* .delivery-options__list */
+    &__list {
+        flex: 0 0 50%;
+    }
+
+    /* .delivery-options__item */
+    &__item {
+        display: flex;
+
+        margin-bottom: 35px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+
+        &:nth-child(1) {
+            .item-options__icon img {
+                width: 60px;
+                height: 66.5px;
+            }
+        }
+
+        &:nth-child(2) {
+            .item-options__icon img {
+                width: 83px;
+                height: 50px;
+            }
+        }
+
+        &:nth-child(3) {
+            .item-options__icon img {
+                width: 61px;
+                height: 54px;
+            }
+        }
+    }
+}
+
+.item-options {
+
+    /* .item-options__icon */
+    &__icon {
+        flex: 0 0 83px;
+        margin-right: 20px;
+
+        @media (max-width: 360px) {
+            margin-right: 5px;
+        }
+    }
+
+    /* .item-options__icon-img */
+    &__icon-img {
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    /* .item-options__content */
+    &__content {}
+
+    /* .item-options__title */
+    &__title {
+        margin-bottom: 12px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    /* .item-options__par */
+    &__par {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: $black-color;
+
+        margin-bottom: 35px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

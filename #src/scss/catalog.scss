@@ -1,0 +1,332 @@
+.catalog {
+
+    /* .catalog__title */
+    &__title {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        @media (max-width: 600px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    /* .catalog__text-wrap */
+    &__text-wrap {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #242333;
+
+        margin-bottom: 50px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 600px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    /* .catalog__left */
+    &__left {
+        flex: 0 1 594px;
+
+        @media (max-width: $md1) {
+            flex: 0 1 463px;
+        }
+
+        @media (max-width: $md2) {
+            flex: 0 1 414px;
+        }
+
+        @media (max-width: 600px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* .catalog__right */
+    &__right {
+        flex: 0 1 316px;
+
+        @media (max-width: $md1) {
+            flex: 0 1 307px;
+        }
+
+        @media (max-width: 850px) {
+            flex: 0 1 229px;
+        }
+
+        text-align: right;
+        font-family: "Orchidea Pro";
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    /* .catalog__sort */
+    &__sort {
+        margin-bottom: 30px;
+
+        @media (min-width: 430px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    /* .catalog__list */
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: 0 -20px 10px;
+
+        @media (max-width: $md2) {
+            margin: 0 -15px 20px;
+        }
+
+        @media (max-width: 600px) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 390px) {
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+        }
+
+        .card-product {
+            width: 25%;
+            padding: 0 20px;
+            margin-bottom: 40px;
+
+            @media (max-width: $md1) {
+                width: 33.3%;
+            }
+
+            @media (max-width: $md2) {
+                padding: 0 15px;
+            }
+
+            @media (max-width: 665px) {
+                width: 50%;
+            }
+
+            @media (max-width: 390px) {
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 275px;
+                padding: 0;
+            }
+
+            .card-product__proposal {
+                right: 20px;
+            }
+
+            @media (max-width: $md2) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    /* .catalog__pagination */
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sort-catalog {
+
+    /* .sort-catalog__result */
+    &__result {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+
+        color: #242333;
+
+        @media (max-width: 430px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    /* .sort-catalog__select */
+    &__select {
+        position: relative;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+
+        color: #242333;
+
+        &.open {
+            .select__drop {
+                display: block;
+            }
+        }
+    }
+}
+
+.select {
+
+    /* .select__top */
+    &__top {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    /* .select__description */
+    &__description {
+        margin-right: 5px;
+    }
+
+    /* .select__selected */
+    &__selected {
+        font-weight: 700;
+    }
+
+    /* .select__arrow */
+    &__arrow {
+        margin-left: 10px;
+
+        img {
+            height: 11.56px;
+            width: 21.33px;
+        }
+    }
+
+    /* .select__drop */
+    &__drop {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: auto;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        display: none;
+
+        z-index: 10;
+
+        @media (max-width: 430px) {
+            right: auto;
+            left: 0;
+        }
+    }
+}
+
+.drop-select {
+
+    /* .drop-select__item */
+    &__item {
+        font-family: inherit;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+
+        color: #242333;
+        white-space: nowrap;
+
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $md1) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.pagination {
+
+    /* .pagination__arrow */
+    &__arrow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+
+        background: $lightGrey-color;
+        border-radius: 50%;
+
+        transition: all 0.3s ease-out;
+
+        svg {
+            width: 11.56px;
+            height: 21.33px;
+        }
+
+        /* .pagination__arrow_prev */
+        &_prev {
+            svg {
+                margin-left: -4px;
+            }
+        }
+
+        /* .pagination__arrow_next */
+        &_next {
+            svg {
+                margin-right: -4px;
+            }
+        }
+
+        &.disabled {
+            border: 1px solid $lightGrey-color;
+            background-color: transparent;
+
+            path {
+                stroke: $lightGrey-color;
+            }
+        }
+
+        @media (min-width: $md1) {
+            &:hover:not(.disabled) {
+                background: $grey-color;
+            }
+        }
+    }
+
+    /* .pagination__pages */
+    &__pages {
+        display: flex;
+        margin: 0 30px;
+    }
+
+    /* .pagination__page */
+    &__page {
+        display: block;
+        margin-right: 30px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        color: $grey-color;
+
+        transition: all 0.3s ease-out;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            font-weight: 700;
+            color: $black-color;
+        }
+
+        @media (min-width: $md1) {
+            &:hover {
+                color: $black-color;
+            }
+        }
+    }
+}

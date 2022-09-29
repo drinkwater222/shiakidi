@@ -1,0 +1,41 @@
+.blog {
+    .article__img {
+        object-position: center !important;
+    }
+
+    .article__text {
+        margin-bottom: 25px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* .blog__title */
+    &__title {
+        margin-bottom: 35px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .article {
+        margin-bottom: 60px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .article__content {
+        @media (min-width: $md1) {
+            padding-left: 120px;
+        }
+    }
+
+    /* .blog__btn */
+    &__btn {
+        width: 177px;
+    }
+}

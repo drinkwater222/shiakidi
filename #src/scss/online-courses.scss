@@ -1,0 +1,168 @@
+.online-courses {
+
+    /* .online-courses__inner */
+    &__inner {}
+
+    /* .online-courses__top */
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .online-courses__icon */
+    &__icon {
+        flex: 0 0 55px;
+        height: 55px;
+
+        @media (max-width: 600px) {
+            flex: 0 0 40px;
+            height: 40px;
+        }
+    }
+
+    /* .online-courses__icon-img */
+    &__icon-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* .online-courses__coming */
+    &__coming {
+        font-family: 'Orchidea Pro';
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 140%;
+        color: #242333;
+        margin-left: 20px;
+
+        @media (max-width: 600px) {
+            font-size: 28px;
+            margin-left: 15px;
+        }
+    }
+
+    /* .online-courses__block */
+    &__block {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 690px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    /* .online-courses__content */
+    &__content {
+        padding-right: 20px;
+
+        @media (max-width: 690px) {
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+
+    /* .online-courses__title */
+    &__title {
+        margin-bottom: 12px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 8px;
+        }
+    }
+
+    /* .online-courses__subtitle */
+    &__subtitle {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 140%;
+        color: #242333;
+
+        margin-bottom: 12px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+    }
+
+    /* .online-courses__text */
+    &__text {
+        padding-right: 82px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        color: #242333;
+
+        @media (max-width: $md1) {
+            padding-right: 78px;
+        }
+
+        @media (max-width: 690px) {
+            padding: 0;
+        }
+    }
+
+    /* .online-courses__images */
+    &__images {
+        flex: 0 0 49.1%;
+
+        @media (max-width: 690px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.images-online {
+
+    /* .images-online__main */
+    &__main {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+
+        @media (max-width: $md2) {
+            height: 250px;
+        }
+    }
+
+    /* .images-online__img */
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* .images-online__bottom */
+    &__bottom {
+        display: flex;
+    }
+}
+
+.bottom-photos {
+
+    /* .bottom-photos__image */
+    &__image {
+        flex: 1 1;
+        height: 180px;
+
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: $md2) {
+            height: 120px;
+        }
+    }
+
+    /* .bottom-photos__img */
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

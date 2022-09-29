@@ -1,0 +1,73 @@
+//================================//
+//ABOUT HERO
+
+.about-hero {
+
+    /* .about-hero__inner */
+    &__inner {
+        @media (min-width: 600px) {
+            display: flex;
+        }
+    }
+
+    /* .about-hero__image */
+    &__image {
+        flex: 0 1 57.7%;
+        height: 400px;
+
+        @media (max-width: $md2) {
+            flex: 0 1 51.6%;
+        }
+
+        @media (max-width: 600px) {
+            height: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    /* .about-hero__content */
+    &__content {
+        flex: 1 1;
+        background: #EB5F43;
+        padding: 80px 15px;
+
+        @media (max-width: 600px) {
+            padding: 40px 15px;
+        }
+    }
+
+    /* .about-hero__title */
+    &__title {
+        text-align: center;
+        color: #FFFFFF;
+
+        margin-bottom: 40px;
+
+        @media (max-width: 600px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    /* .about-hero__logo */
+    &__logo {
+        width: 120px;
+        height: 141px;
+        margin: 0 auto;
+
+        @media (max-width: 600px) {
+            width: 100px;
+            height: 118px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
